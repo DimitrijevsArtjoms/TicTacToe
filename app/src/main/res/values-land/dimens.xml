@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">26sp</dimen>
+    <dimen name="gridMargin">26dp</dimen>
+    <dimen name="textViewTopMargin">22dp</dimen>
+</resources>

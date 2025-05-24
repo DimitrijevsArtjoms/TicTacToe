@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+    <!--label for info about current player who should make move-->
+    <TextView
+        android:id="@+id/turnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textViewTopMargin"
+        android:text="Your turn"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_margin="@dimen/gridMargin"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/turnTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- First row of board -->
+        <LinearLayout
+            style="@style/row">
+            <Button
+                android:id="@+id/button00"
+                style="@style/column"
+                android:onClick="onCellClicked"/>
+            <View style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/button01"
+                style="@style/column"
+                android:onClick="onCellClicked"/>
+            <View style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/button02"
+                style="@style/column"
+                android:onClick="onCellClicked"/>
+        </LinearLayout>
+
+        <View style="@style/horizontalLine"/>
+
+        <!-- Second row of board -->
+        <LinearLayout
+            style="@style/row">
+            <Button
+                android:id="@+id/button10"
+                style="@style/column"
+                android:onClick="onCellClicked"/>
+            <View style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/button11"
+                style="@style/column"
+                android:onClick="onCellClicked"/>
+            <View style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/button12"
+                style="@style/column"
+                android:onClick="onCellClicked"/>
+        </LinearLayout>
+
+        <View style="@style/horizontalLine"/>
+
+        <!-- Third row of board -->
+        <LinearLayout
+            style="@style/row">
+            <Button
+                android:id="@+id/button20"
+                style="@style/column"
+                android:onClick="onCellClicked"/>
+            <View style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/button21"
+                style="@style/column"
+                android:onClick="onCellClicked"/>
+            <View style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/button22"
+                style="@style/column"
+                android:onClick="onCellClicked"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

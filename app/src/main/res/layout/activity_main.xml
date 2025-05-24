@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <!-- Tic Tac Toe label -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="Tic Tac Toe"
+        android:textColor="#333333"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <!-- input name for 1st player -->
+    <EditText
+        android:id="@+id/player1NameInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter Player 1 name..."
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#888888"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+    <!-- input name for 2nd player -->
+    <EditText
+        android:id="@+id/player2NameInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter Player 2 name..."
+        android:textColor="#333333"
+        android:textColorHint="#888888"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <!-- button for PvP mode -->
+        <Button
+            android:id="@+id/buttonPvP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_button"
+            android:text="PvP"
+            android:textAllCaps="false"/>
+        <!-- button for PvC mode -->
+        <Button
+            android:id="@+id/buttonPvC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button"
+            android:text="PvC"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <!-- button for starting the game -->
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_button"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="PLAY"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>
