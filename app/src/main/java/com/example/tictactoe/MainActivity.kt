@@ -28,10 +28,6 @@ class MainActivity : ComponentActivity() {
         val player1NameInput = findViewById<EditText>(R.id.player1NameInput)
         val player2NameInput = findViewById<EditText>(R.id.player2NameInput)
 
-        // restore state of the screen after rotation
-        // LLM ChatGPT-4o helped to implement state saving after rotation
-        // prompt: "how can i make the app to keep state when user rotate the screen,
-        // but reset when user go back to the main screen from the game screen?"
         if (savedInstanceState != null) {
             player1NameInput.setText(savedInstanceState.getString("PLAYER_X_NAME", ""))
             player2NameInput.setText(savedInstanceState.getString("PLAYER_O_NAME", ""))
@@ -135,8 +131,6 @@ class MainActivity : ComponentActivity() {
         player2NameInput.visibility = View.GONE
     }
 
-    // LLM ChatGPT-4o helped to implement onSaveInstanceState for rotation
-    // prompt: "how can i make the app state persist when i rotate the screen?"
     override fun onSaveInstanceState(outState: Bundle) {
         // save the game mode state for screen rotation
         super.onSaveInstanceState(outState)

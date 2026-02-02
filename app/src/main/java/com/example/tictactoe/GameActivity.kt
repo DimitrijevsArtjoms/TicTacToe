@@ -187,7 +187,7 @@ class GameActivity : ComponentActivity(), GameProgressListener {
         }
     }
 
-
+    // TO-DO: implement alpha-beta pruning algorithm for computer's move
     private fun makeComputerMove() {  // built-in gemini in Android studio suggested this implementation of randoming computer's move
         val emptyCells = gameProgress.gameBoard.board.flatMapIndexed { rowIndex, row ->        // Computer places O in random empty cell
             row.mapIndexedNotNull { colIndex, player ->                                        // future idea: use some algorithms, like AlphaBeta or MiniMax
