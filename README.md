@@ -1,6 +1,6 @@
-TicTacToe — Game with UI
+Tic-Tac-Toe Game
 
-TicTacToe is a simple project that implements the classic tic-tac-toe game with a graphical user interface for Android devices.
+Tic-Tac-Toe is a simple project for Android devices that implements the classic tic-tac-toe game with a graphical user interface.
 
 Description:
 
@@ -14,6 +14,7 @@ Players interact with the interface to make moves
 The program updates the UI after each move
 After every turn, it checks for a win or draw
 The game ends when a player wins or the board is full
+2 game modes - PlayerVsPlayer on one device and PlayerVsComputer
 
 Notes:
 
